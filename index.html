@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Calculadora-II PARCIAL</title>
+</head>
+<body>
+    
+    <form class="-calculator">
+        <!--Pantalla-->
+        <div class="screen">
+            <input type="text" class="screen-numbers" name="numbers" id="operation">
+        </div><br>
+
+        <h2 class="title">Cientifica</h2>
+        <!--Botones de la calculadora cientifica-->
+        <div class="cientifica">
+            <div class="btn-group">
+                <input type="button" value="(" class="numero" onclick="numbers.value += '('">
+                <input type="button" value=")" class="numero" onclick="numbers.value += ')'">
+                <input type="button" value="sin" class="numero" onclick="numbers.value += 'sin('">
+                <input type="button" value="cos" class="numero" onclick="numbers.value += 'cos('">
+                <input type="button" value="tan" class="numero" onclick="numbers.value += 'tan('">
+                <input type="button" value="√" class="numero" onclick="numbers.value += 'raiz('">
+            </div>
+            <div class="btn-group">
+                <input type="button" value="^" class="numero" onclick="numbers.value += 'pow('">
+                <input type="button" value="," class="numero" onclick="numbers.value += ','">
+                <input type="button" value="%" class="numero" onclick="numbers.value += 'prc('">
+                <input type="button" value=" " class="numero">
+                <input type="button" value="log" class="numero" onclick="numbers.value += 'log('">
+                <input type="button" value=" " class="numero">
+            </div>  
+        </div><br>
+
+        <h2 class="title">Básica</h2>
+       
+        <div class="lower">
+            <!-- Botones Numericos-->
+            <div class="number">
+                <div class="btn-group">
+                    <input type="button" value="7" class="numero" onclick="numbers.value += '7'">
+                    <input type="button" value="8" class="numero" onclick="numbers.value += '8'">
+                    <input type="button" value="9" class="numero" onclick="numbers.value += '9'">
+                </div>
+                <div class="btn-group">
+                    <input type="button" value="4" class="numero" onclick="numbers.value += '4'">
+                    <input type="button" value="5" class="numero" onclick="numbers.value += '5'">
+                    <input type="button" value="6" class="numero" onclick="numbers.value += '6'">
+                </div>
+                <div class="btn-group">
+                    <input type="button" value="1" class="numero" onclick="numbers.value += '1'">
+                    <input type="button" value="2" class="numero" onclick="numbers.value += '2'">
+                    <input type="button" value="3" class="numero" onclick="numbers.value += '3'">
+                </div>
+                <input type="button" value="0" class="numero" onclick="numbers.value += '0'">
+                <input type="button" value="." class="numero" onclick="numbers.value += '.'">
+            </div>
+    
+            <!--Funciones Básicas-->
+            <div class="basicas">
+                <div class="btn-group">
+                    <input type="button" value="DEL" class="btnDel" onclick="pulsar('C')">
+                    <input type="button" value="AC" class="btnAc" onclick="borrar_num()">
+                </div>
+                <div class="btn-group">
+                    <input type="button" value="±" class="numero" onclick="numbers.value += '±'">
+                    <input type="button" value="+" class="numero" onclick="numbers.value += '+'">
+                    <input type="button" value="-" class="numero" onclick="numbers.value += '-'">              
+                </div>
+                <div class="btn-group">
+                    <input type="button" value="*" class="numero" onclick="numbers.value += '*'">
+                    <input type="button" value="/" class="numero" onclick="numbers.value += '/'">
+                    <input type="button" value="π" class="numero" onclick="numbers.value += '3.141592'">
+
+                </div>
+                <input type="button" value="=" class="btnIgual" onclick="pulsar('=')">
+            </div>
+        </div>
+    </form>
+
+    <!--Modal-->
+    <div class="btn-fila">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Datos del alumno
+        </button>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Datos del Alumno</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Carné: <b>0909-16-9388</b>
+                    <br>Nombre completo: <b>Joseline Edith Pavón Mayorga</b>
+                    <br>Fecha y hora de finalizacion: <b>18/09/2021 - 23:02</b>
+                    <br>Nota esperada segun rendimiento: <b>17 pts.</b>
+                </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
