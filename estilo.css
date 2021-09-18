@@ -2,24 +2,32 @@ form{
     display:block;
     margin:0 auto;
     padding:20px;
-    background-color:rgba(76, 82, 82, 0.712);
+    background-color:rgba(82, 88, 88, 0.712);
     width:500px;
     height:550px;
    
 }
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    padding: 20px;
+    margin: 0;
+    background-color: rgb(94, 88, 88);
+}
 
 
-
-/*Estilo*/
-.container-calculator{
+.calculator{
     display: block;
     margin: 0 auto;
     padding: 30px;
     width: 35%;
     height: 98%;
-    background-color: rgb(28, 31, 31);
+    background-color: rgb(83, 87, 87);
     box-shadow: 2px 1px 29px 6px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .screen{
@@ -40,7 +48,7 @@ form{
 }
 
 /*Secciones de Calculadora*/
-.scientific{
+.cientifica{
     width: 95%;
     height: 25%;
 }
