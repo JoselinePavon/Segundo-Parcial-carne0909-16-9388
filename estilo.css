@@ -1,0 +1,131 @@
+form{
+    display:block;
+    margin:0 auto;
+    padding:20px;
+    background-color:rgba(76, 82, 82, 0.712);
+    width:500px;
+    height:550px;
+   
+}
+
+
+
+/*Estilo*/
+.container-calculator{
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+    width: 35%;
+    height: 98%;
+    background-color: rgb(28, 31, 31);
+    box-shadow: 2px 1px 29px 6px;
+    font-size: 25px;
+}
+
+.screen{
+    width: 100%;
+}
+
+.screen-numero{
+    background: rgb(62, 68, 68, 0);
+    color: rgb(255, 255, 255);
+    padding: .7em;
+    width: 400px;
+    height: 30px;
+    font-size: 1.2em;
+    text-align: left;
+    border: none;
+    outline: 0;
+    border-bottom: 2px solid rgb(255, 98, 182);
+}
+
+/*Secciones de Calculadora*/
+.scientific{
+    width: 95%;
+    height: 25%;
+}
+
+.abajo{
+    display: flex;
+}
+
+.number{
+    text-align: center;
+    margin: 10px;
+}
+
+.basica{
+    text-align: center;
+    margin: 10px;
+}
+
+/*Titulos*/
+.title{
+    color: rgb(255, 246, 250);
+}
+
+/*Estilo de Botones*/
+.numero{
+    padding: 5px;
+    color: rgb(255, 246, 250);
+    margin: 6px;
+    background: transparent;
+    border: 2px solid rgb(255, 98, 182);
+    border-radius: 70px;
+    width: 40px;
+    height: 40px;
+}
+
+.btnDel{
+    padding: 5px;
+    color: rgb(255, 246, 250);
+    background-color:rgb(248, 60, 154);
+    border: 2px solid rgb(255, 98, 182);
+    border-radius: 5px;
+    width: 90px;
+    height: 50px;
+    margin: 3px;
+}
+
+.btnAc{
+    padding: 5px;
+    color: rgb(255, 246, 250);
+    background: transparent;
+    border: 2px solid rgb(255, 98, 182);
+    border-radius: 5px;
+    width: 90px;
+    height: 50px;
+    margin: 3px;
+}
+
+.btnIgual{
+    padding: 5px;
+    color: rgb(255, 246, 250);
+    background: transparent;
+    border: 2px solid rgb(255, 98, 182);
+    border-radius: 5px;
+    width: 180px;
+    height: 50px;
+    margin: 3px;
+}
+
+.btnFila{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+<style>
+.cientifica{
+    display: flex;
+}
+.abajo{
+    float: left;
+}
+
+.basica{
+    float: right;
+}
+</style>

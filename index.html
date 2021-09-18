@@ -12,10 +12,10 @@
 </head>
 <body>
     
-    <form class="-calculator">
+    <form class="calculator">
         <!--Pantalla-->
         <div class="screen">
-            <input type="text" class="screen-numbers" name="numbers" id="operation">
+            <input type="text" class="screen-numero" name="numbers" id="operation">
         </div><br>
 
         <h2 class="title">Cientifica</h2>
@@ -37,56 +37,62 @@
                 <input type="button" value="log" class="numero" onclick="numbers.value += 'log('">
                 <input type="button" value=" " class="numero">
             </div>  
-        </div><br>
+        </div>
 
         <h2 class="title">Básica</h2>
        
-        <div class="lower">
+        <div class="abajo">
             <!-- Botones Numericos-->
             <div class="number">
                 <div class="btn-group">
                     <input type="button" value="7" class="numero" onclick="numbers.value += '7'">
                     <input type="button" value="8" class="numero" onclick="numbers.value += '8'">
                     <input type="button" value="9" class="numero" onclick="numbers.value += '9'">
-                </div>
+                </div><br>
+            
                 <div class="btn-group">
                     <input type="button" value="4" class="numero" onclick="numbers.value += '4'">
                     <input type="button" value="5" class="numero" onclick="numbers.value += '5'">
                     <input type="button" value="6" class="numero" onclick="numbers.value += '6'">
-                </div>
+                </div><br>
+
                 <div class="btn-group">
                     <input type="button" value="1" class="numero" onclick="numbers.value += '1'">
                     <input type="button" value="2" class="numero" onclick="numbers.value += '2'">
                     <input type="button" value="3" class="numero" onclick="numbers.value += '3'">
-                </div>
+                </div><br>
+                <div class="btn-group">
                 <input type="button" value="0" class="numero" onclick="numbers.value += '0'">
                 <input type="button" value="." class="numero" onclick="numbers.value += '.'">
             </div>
+            </div>
+        </div>
     
             <!--Funciones Básicas-->
-            <div class="basicas">
+          
+            <div class="basica">
                 <div class="btn-group">
                     <input type="button" value="DEL" class="btnDel" onclick="pulsar('C')">
                     <input type="button" value="AC" class="btnAc" onclick="borrar_num()">
-                </div>
+                </div><br>
                 <div class="btn-group">
                     <input type="button" value="±" class="numero" onclick="numbers.value += '±'">
                     <input type="button" value="+" class="numero" onclick="numbers.value += '+'">
                     <input type="button" value="-" class="numero" onclick="numbers.value += '-'">              
-                </div>
+                </div><br>
                 <div class="btn-group">
                     <input type="button" value="*" class="numero" onclick="numbers.value += '*'">
                     <input type="button" value="/" class="numero" onclick="numbers.value += '/'">
                     <input type="button" value="π" class="numero" onclick="numbers.value += '3.141592'">
 
-                </div>
+                </div><br>
                 <input type="button" value="=" class="btnIgual" onclick="pulsar('=')">
             </div>
-        </div>
+      
     </form>
-
+    <br>
     <!--Modal-->
-    <div class="btn-fila">
+    <div class="btnFila">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Datos del alumno
         </button>
